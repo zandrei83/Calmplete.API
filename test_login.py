@@ -15,7 +15,7 @@ def test_login_email_password_registered_email_and_password_successful():
 
     login_obj.check_response_code(200)
     login_obj.check_auth_token()
-
+@allure.feature('User login feature')
 def test_login_email_password_registered_email_invalid_password_fail():
     registration_obj = RegistrationEndpoint()
     reg_data = registration_obj.create_reg_data()
