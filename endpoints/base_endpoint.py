@@ -85,8 +85,3 @@ class BaseEndpoint:
                     if pass_len <= 0:
                         break
         return user_password
-
-
-if __name__ == '__main__':
-    base_obj = BaseEndpoint()
-    print(base_obj.create_user_password('upper,digits,special', 7))

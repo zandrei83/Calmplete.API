@@ -1,4 +1,4 @@
-from .base_endpoint import BaseEndpoint
+from endpoints.base_endpoint import BaseEndpoint
 import allure
 
 

@@ -1,4 +1,4 @@
-from .base_endpoint import BaseEndpoint
+from endpoints.base_endpoint import BaseEndpoint
 import allure
 
 
@@ -28,5 +28,3 @@ class LoginEndpoint(BaseEndpoint):
     def check_response_text(self, text):
         with allure.step('Checking response text'):
             assert self.response.text == text, f'Response text ({self.response.text}) does not match {text}'
-
-
